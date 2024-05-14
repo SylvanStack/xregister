@@ -16,6 +16,8 @@
     <properties>
         <java.version>17</java.version>
         <fastjson.version>1.2.83</fastjson.version>
+        <okhttp.version>4.12.0</okhttp.version>
+        <spring-cloud.commons.version>4.1.1</spring-cloud.commons.version>
     </properties>
     <dependencies>
         <dependency>
@@ -27,6 +29,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>${spring-cloud.commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
