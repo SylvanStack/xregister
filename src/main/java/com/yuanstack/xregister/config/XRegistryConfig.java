@@ -1,5 +1,6 @@
 package com.yuanstack.xregister.config;
 
+import com.yuanstack.xregister.cluster.Cluster;
 import com.yuanstack.xregister.health.HealthChecker;
 import com.yuanstack.xregister.health.XHealthChecker;
 import com.yuanstack.xregister.service.RegistryService;
@@ -26,4 +27,10 @@ public class XRegistryConfig {
     public HealthChecker healthChecker(@Autowired RegistryService registryService) {
         return new XHealthChecker(registryService);
     }
+
+    @Bean(initMethod = "init")
+    public Cluster cluster(@Autowired XRegistryConfigProperties registryConfigProperties) {
+        return new Cluster(registryConfigProperties);
+    }
+
 }

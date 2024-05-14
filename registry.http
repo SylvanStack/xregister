@@ -41,3 +41,14 @@ Content-Type: application/json
 
 ### 获取服务的版本
 POST http://localhost:8484/version?service=com.yuanstack.xrpc.UserService
+
+### info
+GET http://localhost:8484/info
+### cluster
+GET http://localhost:8484/cluster
+### info 85
+GET http://localhost:8485/info
+### cluster 85
+GET http://localhost:8485/cluster
+### sl 85
+GET http://localhost:8485/sl

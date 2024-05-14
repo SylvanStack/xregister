@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: xregister
+
+xregister:
+  servers:
+    - http://127.0.0.1:8484
+    - http://127.0.0.1:8485
+    - http://127.0.0.1:8486
