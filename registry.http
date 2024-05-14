@@ -8,7 +8,7 @@ Content-Type: application/json
 {
   "context": "xrpc",
   "host": "127.0.0.1",
-  "port": 8081,
+  "port": 8084,
   "scheme": "http",
   "status": false,
   "parameters": {
@@ -52,3 +52,6 @@ GET http://localhost:8485/info
 GET http://localhost:8485/cluster
 ### sl 85
 GET http://localhost:8485/sl
+
+### snapshot 8484
+GET http://localhost:8484/snapshot
